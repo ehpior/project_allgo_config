@@ -1,4 +1,8 @@
-spring.profiles: dev
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+      
 app:
   ver: v1.0
 

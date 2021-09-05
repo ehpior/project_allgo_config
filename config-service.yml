@@ -1,16 +1,25 @@
-spring.profiles: dev
+spring:
+  config:
+    activate:
+      on-profile: "dev"
 jhk:
   profile: I'm dev jhk
   comment: Hello! dev jhk
 
 ---
-spring.profiles: test
+spring:
+  config:
+    activate:
+      on-profile: "test"
 jhk:
   profile: I'm dev jhk
   comment: Hello! test jhk
 
 ---
-spring.profiles: real
+spring:
+  config:
+    activate:
+      on-profile: "real"
 jhk:
   profile: I'm real jhk
   comment: Hello! real jhk
