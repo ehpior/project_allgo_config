@@ -1,8 +1,3 @@
-spring:
-  config:
-    activate:
-      on-profile: "dev"
-      
 app:
   ver: v1.0
 
@@ -10,6 +5,9 @@ server:
   port: 8092
   
 spring:
+  config:
+    activate:
+      on-profile: "dev"
   application:
     name: stock-service
   datasource:

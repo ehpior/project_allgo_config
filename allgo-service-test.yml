@@ -1,8 +1,3 @@
-spring:
-  config:
-    activate:
-      on-profile: "test"
-      
 app:
   ver: v1.0
   
@@ -10,6 +5,9 @@ server:
   port: 8091
   
 spring:
+  config:
+    activate:
+      on-profile: "test"
   application:
     name: allgo-service
   datasource:
