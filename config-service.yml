@@ -1,0 +1,16 @@
+spring.profiles: dev
+jhk:
+  profile: I'm dev jhk
+  comment: Hello! dev jhk
+
+---
+spring.profiles: test
+jhk:
+  profile: I'm dev jhk
+  comment: Hello! test jhk
+
+---
+spring.profiles: real
+jhk:
+  profile: I'm real jhk
+  comment: Hello! real jhk
