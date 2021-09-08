@@ -7,7 +7,7 @@ spring:
 
 eureka:
   instance:
-    ipAddress: 1.240.167.231
+    ipAddress: 127.0.0.1
   client:
     register-with-eureka: false # 3번
     fetch-registry: false  # 4번
