@@ -1,18 +1,22 @@
 app:
   ver: v1.0
-
+  
 server:
-  port: 8092
+  port: 8091
   
 spring:
   application:
-    name: stock-service
+    name: allgo-service
   datasource:
     url: jdbc:mariadb://jhk-db.cjvrebigithi.ap-northeast-2.rds.amazonaws.com/allgo?autoReconnect=true
     #url: jdbc:mariadb://127.0.0.1/allgo?autoReconnect=true
     username: jhk
     password: '{cipher}27eeb3db89cf4d8d6daa8c1bc54596fa5e912e494668f2ad2e7c5b351a97a264'
     driver-class-name: org.mariadb.jdbc.Driver
+  #jpa:
+    #hibernate:
+      #naming:
+        #physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 springfox:
   documentation:
@@ -22,7 +26,7 @@ springfox:
 
 eureka:
   instance:
-    instance-id: stock-microservice-instance
+    instance-id: allgo-microservice-instance
     hostname: 1.240.167.231
     
   client:
@@ -30,15 +34,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://1.240.167.231:8761/eureka
-  
-kafka:
-  topic: 
-    cheg: tick.cheg
-    program: tick.program
-    business: tick.business
-  bootstrap: 1.240.167.231:9092
-  #bootstrap: 127.0.0.1:19092
-  group: stock.group
+
     
 #logging:
   #file:
@@ -48,3 +44,4 @@ kafka:
   #level:  # 각 package 별로 로깅 레벨을 지정할 수 있다.
     #com.project.study : error
     #com.project.study.controller : debug
+
