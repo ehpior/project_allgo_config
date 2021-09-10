@@ -33,9 +33,10 @@ eureka:
   
 kafka:
   topic: 
-    cheg: tick.cheg
-    program: tick.program
-    business: tick.business
+    cheg: stock.cheg
+    program: stock.program
+    business: stock.business
+    stocks: stock.stocks
   bootstrap: 1.240.167.231:9092
   #bootstrap: 127.0.0.1:19092
   group: stock.group
