@@ -37,7 +37,7 @@ kafka:
     program: stock.program
     business: stock.business
     stocks: stock.stocks
-  bootstrap: 127.0.0.1:19092
+  bootstrap: 1.240.167.231:9092
   group: stock.group
     
 #logging:
