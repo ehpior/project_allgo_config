@@ -13,18 +13,18 @@ spring:
             preLogger: true
             postLogger: true
       routes:
-        - id: allgo-service
-          uri: lb://ALLGO-SERVICE
+        - id: portfolio-service
+          uri: lb://PORTFOLIO-SERVICE
           predicates:
-            - Path=/allgo/**, /api-docs/allgo/**
+            - Path=/portfolio/**, /api-docs/portfolio/**
           filters:
-            - name: AllgoFilter
+            - name: PortfolioFilter
               args:
-                baseMessage: Spring Cloud Gateway AllgoFilter
+                baseMessage: Spring Cloud Gateway PortfolioFilter
                 preLogger: true
                 postLogger: true
-            - RewritePath=^/allgo/(?<apiuri>.*), /v1.0/${apiuri}
-            - RewritePath=^/api-docs/allgo/(?<apiuri>.*), /${apiuri}
+            - RewritePath=^/portfolio/(?<apiuri>.*), /v1.0/${apiuri}
+            - RewritePath=^/api-docs/portfolio/(?<apiuri>.*), /${apiuri}
         - id: stock-service
           uri: lb://STOCK-SERVICE
           predicates:
