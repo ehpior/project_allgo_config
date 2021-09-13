@@ -8,8 +8,8 @@ spring:
   application:
     name: stock-service
   datasource:
-    url: jdbc:mariadb://jhk-db.cjvrebigithi.ap-northeast-2.rds.amazonaws.com/allgo?autoReconnect=true
-    #url: jdbc:mariadb://127.0.0.1/allgo?autoReconnect=true
+    url: jdbc:mariadb://jhk-db.cjvrebigithi.ap-northeast-2.rds.amazonaws.com/stock?autoReconnect=true
+    #url: jdbc:mariadb://127.0.0.1/stock?autoReconnect=true
     username: jhk
     password: '{cipher}27eeb3db89cf4d8d6daa8c1bc54596fa5e912e494668f2ad2e7c5b351a97a264'
     driver-class-name: org.mariadb.jdbc.Driver
