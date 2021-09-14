@@ -35,7 +35,12 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
 
-    
+kafka:
+  topic: 
+    price: stock.price
+  bootstrap: 1.240.167.231:9092
+  group: portfolio.group
+
 #logging:
   #file:
     #name: ${user.dir}/log/test.log  # 로깅 파일 위치이다.
